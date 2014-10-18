@@ -1,0 +1,22 @@
+<head>
+  <title>publish-subscribe-demo</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+<ul>
+    <h3>Blog Posts</h3>
+    {{#each post}}
+        <li>{{title}}</li>
+    {{/each}}
+</ul>
+
+</template>
